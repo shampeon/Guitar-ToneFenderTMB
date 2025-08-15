@@ -1,16 +1,17 @@
-A small PCB for the Fender AB763 treble and bass tone stack. Inspired by Tristan Collins's [Bandmaster PCB](https://github.com/tristancollins/Guitar-ToneBandmaster), with the same dimensions and for the PCB and mounting holes, and created in KiCad 9.
+A small PCB for the Fender AB763 treble, mid, and bass tone stack. Inspired by Tristan Collins's [Bandmaster PCB](https://github.com/tristancollins/Guitar-ToneBandmaster), with the same dimensions and for the PCB and mounting holes, and created in KiCad 9.
 
 # Components and their values
 
 * R1: 100k (tone slope resistor, 0.5W or greater)
-* R2: 6.8k (mid resistor, 0.5W or greater)
 * C1: 250pF (treble capacitor, 400V or greater)
-* C2: 100nF/0.1uF (bass capacitor, 400V or greater), has through holes for axial or 5mm radial caps
+* C2: 100nF/0.1uF (bass capacitor, 400V or greater)
 * C3: 4.7nF/0.0047uF (mid capacitor, 400V or greater)
 * J1, J2: 2 pin screw terminal, 5mm spacing
-* RV1, RV2: 3 pin screw terminal, 5mm spacing
+* RV1, RV2, RV3: 3 pin screw terminal, 5mm spacing
 
-You can adjust the values of the components to change the behavior of the tone stack. Select the Fender Treble-Bass tonestack at [Yet Another Tonestack Calculator](https://tonestack.yuriturov.com) to compare the frequency response to the standard values here.
+You can adjust the values of the components to change the behavior of the tone stack. Select the Fender Treble-Mid-Bass tonestack at [Yet Another Tonestack Calculator](https://tonestack.yuriturov.com) to compare the frequency response to the standard values here.
+
+The mid pot in this project is wired as a potentiometer, as in the Bassman 5F6-A, not a variable resistor as in the AB763 black panel amps. This avoids the issue where the signal completely drops out when all the tone pots are turned down.
 
 Rob Robinette has a great [page on how the TMB tone stack works](https://robrobinette.com/How_The_TMB_Tone_Stack_Works.htm).
 
